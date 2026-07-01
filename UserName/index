@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Username</title>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar bg-dark navbar-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">form handling</span>
+    </div>
+  </nav>
+  <section class="mt-5 container-fluid">
+    <div class="row">
+      <div class="col-4 m-auto">
+        <div class="card">
+          <div class="card-header bg-dark text-center text-white">
+            <h2>Username Box</h2>
+          </div>
+          <div class="card-body">
+            <form>
+              <input type="text" class="form-control" placeholder="Enter Username" value="" id="usn-box">
+            </form>
+                </div>
+                <div class="card-footer bg-dark text-center text-white">
+                  <h5 id="text-ele">Enter text</h5>
+                </div>
+                    </div>
+                  </div>
+              </div>
+  </section>
+
+  <!--Script-code-->
+     <script>
+      let usnBox=document.getElementById('usn-box');
+      let textEle=document.getElementById('text-ele');
+
+      usnBox.addEventListener('keyup',function()
+      {
+        let enteredText=usnBox.value;
+        textEle.textContent=enteredText;
+      })
+     </script>
+
+</body>
+</html>
